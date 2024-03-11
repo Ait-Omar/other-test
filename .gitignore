@@ -1,0 +1,7 @@
+.env
+venv/
+stremlit_app.py
+test.py
+htmlTemplates.py
+app1.py
+app.py

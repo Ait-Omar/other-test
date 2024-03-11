@@ -1,0 +1,325 @@
+.navbar .navbar-nav .nav-link
+{
+  color: white;
+  font-family:  sans-serif;
+  font-size: 20px;
+  /*color: RGB(218, 75, 0);****/
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+color: #33d1cc;
+}
+.navbar .navbar-toggler{
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus{
+  box-shadow: none;
+}
+/*start footer*/
+
+.footer{
+  background-color: #19283f;
+}
+.footer .container{
+  background-color: #19283f;
+}
+.footer .copyright > span{
+color: #33d1cc;
+}
+.footer.copyright div span{
+  color:  yellowgreen;
+}
+
+/*end footer*/
+.main-btn{
+  background-color: #ff3150;
+  color: #ffc400;
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover{
+  background-color: #33d1cc;
+}
+.main-title::after{
+  content: '';
+  width: 120px;
+  height: 2px;
+  background-color: #33d1cc;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*start landing*/
+.landing{
+  background-color:#19283f ;
+  min-height: calc(100vh - 72px);
+}
+
+/*end landing*/
+
+/*start features*/
+.features  .icon-holder{
+  height: 200px;
+}
+.features  .icon-holder svg{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features  .icon-holder .number{
+  font-size: 12rem;
+  color: #eff7fa;
+}
+.features  .icon-holder .icon{
+  font-size:#33d1cc;
+}
+.features .feat h4{
+  color: #ffc400;
+}
+/*end features*/
+
+form {
+  margin-top: 20px; /* Marge en haut du formulaire */
+}
+
+input {
+  text-align: center;
+  padding: 8px; /* Rembourrage pour les champs de saisie */
+  margin-bottom: 10px; /* Marge en bas des champs de saisie */
+}
+
+input[type="submit"] {
+  background-color: #4CAF50; /* Couleur de fond pour le bouton de soumission */
+  color: white; /* Couleur du texte pour le bouton de soumission */
+  cursor: pointer; /* Curseur pointer pour indiquer que le bouton est cliquable */
+}
+.subcontainer{
+  /*background-color: #95B9C7;*/
+  background-image: url('static/machinLearning.jpg');
+}
+.container {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+}
+
+
+form {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+select {
+  width: 83%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+ 
+.card-deck .card {
+  min-width: 220px;
+}
+.class1 {
+  flex: 1;
+  max-width: calc(100% - 20px); /* 33.33% width with some margin */
+  margin-right: 20px;
+}
+
+.class2 {
+  flex: 2;
+  max-width: calc(100% - 20px);
+  margin-right: 20px;
+}
+
+.class3 {
+  background-color: RGB(17, 230, 253);
+  margin-right: 200px;
+  margin-left: 1000px;
+}
+.container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container_TOP_LEFT {
+  width: 50%; /* Adjust as needed */
+  background-color: lightgray;
+  padding: 20px;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container_TOP_RIGHT {
+  width: 50%; /* Adjust as needed */
+  background-color:  lightgray;
+  padding: 20px;
+  margin-top: 170px;
+  margin-left: 100px;
+  margin-right: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container_TOP_RIGHT_ann {
+  width: 50%; /* Adjust as needed */
+  background-color:  lightgray;
+  padding: 20px;
+  margin-top: 250px;
+  margin-left: 100px;
+  margin-right: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.centrer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.champ {
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centre les éléments horizontalement */
+  padding: 10px;
+  max-width: 450px; /* Ajustez cette valeur pour définir la largeur maximale */
+  margin: 0 auto; /* Centre le conteneur */
+}
+
+.champ label {
+  margin-right: 5px; /* Espace entre le label et le champ */
+  width: 300px; /* Ajustez la largeur du label selon vos besoins */
+}
+
+.champ select {
+  flex: 1; /* Le champ de sélection prend tout l'espace restant */
+  border-color: black;
+}
+
+.hidden {
+display: none;
+}
+@keyframes moveAnimation {
+0% { bottom: 5px; left: 5px; }
+0% { bottom: 5px; left: 5px; }
+0% { bottom: 5px; left: 5px; }
+}
+
+.logo {
+height: 40px; /* Ajustez la hauteur selon vos besoins */
+width: auto; /* Pour maintenir les proportions de l'image */
+}
+
+.chat-message {
+  padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
+}
+.chat-message.user {
+  background-color: #2b313e;
+  width: 50%;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement si nécessaire */
+  margin: auto; /* Ajoute automatiquement une marge des deux côtés */
+    
+}
+.chat-message.bot {
+  background-color: #475063;
+  width: 50%;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement si nécessaire */
+  margin: auto; /* Ajoute automatiquement une marge des deux côtés */
+   
+}
+.chat-message .avatar {
+width: 20%;
+}
+.chat-message .avatar img {
+max-width: 78px;
+max-height: 78px;
+border-radius: 50%;
+object-fit: cover;
+}
+.chat-message .message {
+width: 60%;
+padding: 0 1.5rem;
+color: #fff;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, .1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+

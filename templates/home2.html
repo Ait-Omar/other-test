@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %} ViscoPredict {% endblock %}
+{% block content %}
+<div class="landing d-flex justify-content-center align-items-center ">
+    <div class="text-center text-light" >
+        <h1 class="mb-5">Choisir le modèl que vous voulez tester:</H1>
+        <button class="btn  rounded-pill main-btn" onclick="window.location.href='/ann';" style="margin-right: 60px;">Réseau des neurons</button>
+        <button class="btn  rounded-pill main-btn" onclick="window.location.href='/Régression';" style="margin-bottom: 10px;">Régression polynomiale</button>
+    </div>
+</div>
+{% endblock %}

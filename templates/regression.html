@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %} ViscoPredict {% endblock %}
+{% block content %}
+<body>
+  <div style="color: #19283f;padding: 20px;border-radius: 10px;margin-left:50px;margin-top:15px ;max-width: 800px;">
+    <h3 >Prédiction de la viscosité utilisant la régression polynomial</h3>
+  </div>
+  <div class="container-wrapper">
+      <div class="container_TOP_LEFT">
+        <div class="class1">
+          <h3 style="color: rgb(5, 116, 242);text-align: center;"> Inseré les Paramètres du fonctionnement:</h3>
+          <form class="form-group" action="/Régression" method="POST">
+            <label for="Shear stress">σ: Shear stress (100 à 980 )</label>
+            <input type="text" name="a" style="background-color: white;">
+            <label for="Temperature">T: Temperature (75°C à 85°C )</label>
+            <input  type="text" name="b" style="background-color: white;">
+            <label for="Solid content">SC: Solid content (31% à 35%)</label>
+            <input  type="text" name="c" style="background-color: white;">
+            <label for="petalwidth">Degré du polynôme:</label>
+            <input  type="number" name="d" style="background-color: white;"><br><br>
+            <button class="btn btn-dark" type="submit" name="submit">Predict</button>
+          </form><br>
+        </div>
+      </div>
+      <div class="container_TOP_RIGHT">
+       <div class="class2">
+        <h3 style="color: rgb(5, 116, 242);text-align: center;"> Résultats:</h3>
+        <label for="viscosité" style="color: rgb(0, 0, 0);">viscosité prédite:</label>
+        <div  style="text-align: center; background-color: rgb(254, 254, 254);color: black;width: 40%;height: 30px; margin: auto;border: 1px solid black;">{{data}}</div>
+        <label for="rmse" style="color: rgb(0, 0, 0);"> RMSE (en fonction du degré):</label>
+        <div  style="text-align: center; background-color: rgb(255, 255, 255);color: black;width: 40%;height: 30px; margin: auto;border: 1px solid black;">{{rmse}}</div>
+        <label for="mae" style="color: rgb(0, 0, 0);"> MAE (en fonction du degré):</label>
+        <div  style="text-align: center; background-color: rgb(254, 254, 254);color: black;width: 40%;height: 30px; margin: auto;border: 1px solid black;">{{mae}}</div>
+        <label for="coefficient-correlation" style="color: rgb(0, 0, 0);"> Coefficient Correlation:</label>
+            <div  style="text-align: center; background-color: rgb(255, 255, 255);color: black;width: 40%;height: 30px; margin: auto;border: 1px solid black;">{{coefficient_correlation}}</div>
+       </div>
+      </div>
+  </div>
+  <div class="class3">
+    {{ graph | safe }}
+  </div>
+</body>
+{% endblock %}

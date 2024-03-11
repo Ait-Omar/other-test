@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %} ViscoPredict {% endblock %}
+{% block content %}
+<body>
+  <div class="container">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+              <h4 class="my-0 font-weight-normal"> Charger le fichier</h4>
+          </div>
+          <div class="card-body">
+            <form class="form-group" action="/upload" method="POST" enctype="multipart/form-data">
+              <!-- ... autres éléments du formulaire ... -->
+              <input type="file" name="file" accept=".xlsx, .csv,.xls" ><br><br>
+              <button class="btn btn-dark" type="submit" name="submit">Uploader</button>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+{% endblock %}
